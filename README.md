@@ -1,7 +1,7 @@
 # Objective-C-Style-Guide
 
 This style guide outlines the coding conventions to be used for all Rigil Corp.'s Objective-C projects.
-This will keep our code consistent as we expand our mobile team.
+This will keep code consistent as we expand our mobile team.
 
 ## Background
 
