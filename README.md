@@ -77,9 +77,9 @@ Use `/**Documentation*/` comment notation to document all public methods in your
 **Preferred:**
 ```objc
 if (user.isHappy) {
-  //Do something
+    //Do something
 }else{
-  //Do something else
+    //Do something else
 }
 ```
 
@@ -87,10 +87,10 @@ if (user.isHappy) {
 ```objc
 if (user.isHappy)
 {
-    //Do something
+  //Do something
 }
 else {
-    //Do something else
+  //Do something else
 }
 ```
 
