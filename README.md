@@ -11,11 +11,10 @@ Before continuing you should take the time to review Apple's Cocoa and Objective
 * [Cocoa Fundamentals Guide](https://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/CocoaFundamentals/Introduction/Introduction.html)
 * [Coding Guidelines for Cocoa](https://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/CodingGuidelines/CodingGuidelines.html)
 * [iOS App Programming Guide](http://developer.apple.com/library/ios/#documentation/iphone/conceptual/iphoneosprogrammingguide/Introduction/Introduction.html)
-* 
 
 ## Language
 
-Although we are an international team preference should be given to US English.
+Use US English.  We're a diverse team, but we need to pick a single langauge.
 
 **Preferred:**
 ```objc
@@ -73,12 +72,13 @@ Use `/**Documentation*/` comment notation to document all public methods in your
 
 * Indent with tabs.
 * Method braces and other braces (`if`/`else`/`switch`/`while` etc.) always open on the same line as the statement but close on a new line.
+* Comment and line break between sections of code were it makes sense.  Someone else should be able to glance at your code and know what's going on.
 
 **Preferred:**
 ```objc
 if (user.isHappy) {
   //Do something
-} else {
+}else{
   //Do something else
 }
 ```
