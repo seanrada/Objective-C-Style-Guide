@@ -3,7 +3,7 @@
 This style guide outlines the coding conventions to be used for all Rigil Corp.'s Objective-C projects.
 This will keep code consistent as we expand our mobile team.  This document will be updated as style conficts come up.
 
-## Background
+# Background
 
 Before continuing you should take the time to review Apple's Cocoa and Objective-C Guides
 
@@ -105,3 +105,23 @@ else {
 ```objc
 -(void)doSomething{}
 ```
+## Dot-Notation Syntax
+
+Dot syntax is purely a convenient wrapper around accessor method calls. When you use dot syntax, the property is still accessed or changed using getter and setter methods.  Read more [here](https://developer.apple.com/library/ios/documentation/cocoa/conceptual/ProgrammingWithObjectiveC/EncapsulatingData/EncapsulatingData.html)
+
+Dot-notation should **always** be used for accessing and mutating properties, as it makes code more concise. Bracket notation is preferred in all other instances.
+
+**Preferred:**
+```objc
+NSInteger arrayCount = [self.array count];
+view.backgroundColor = [UIColor orangeColor];
+[UIApplication sharedApplication].delegate;
+```
+
+**Not Preferred:**
+```objc
+NSInteger arrayCount = self.array.count;
+[view setBackgroundColor:[UIColor orangeColor]];
+UIApplication.sharedApplication.delegate;
+```
+
