@@ -3,7 +3,7 @@
 This style guide outlines the coding conventions to be used for all Rigil Corp.'s Objective-C projects.
 This will keep code consistent as we expand our mobile team.  This document will be updated as style conficts come up.
 
-# Background
+## Background
 
 Before continuing you should take the time to review Apple's Cocoa and Objective-C Guides
 
