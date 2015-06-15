@@ -29,7 +29,7 @@ UIColor *myColour = [UIColor whiteColor];
 
 ## Code Organization
 
-Use `#pragma mark -` to categorize methods in functional groupings and protocol/delegate implementations following this general structure.  Note the '<>' around delegate methods 
+Use `#pragma mark -` to categorize methods in functional groupings and protocol/delegate implementations following this general structure.  Note the '<>' around delegate methods.
 
 ```objc
 #pragma mark - Lifecycle
@@ -44,10 +44,6 @@ Use `#pragma mark -` to categorize methods in functional groupings and protocol/
 
 - (void)setCustomProperty:(id)value {}
 - (id)customProperty {}
-
-#pragma mark - IBActions
-
-- (IBAction)submitData:(id)sender {}
 
 #pragma mark - Public
 
@@ -96,4 +92,16 @@ if (user.isHappy)
 else {
     //Do something else
 }
+```
+
+* In method signatures, there should be a space after the method type (-/+ symbol), and before the opening curly bracket. 
+
+**Preferred:**
+```objc
+- (void)doSomething {}
+```
+
+**Not Preferred:**
+```objc
+-(void)doSomething{}
 ```
